@@ -12,3 +12,81 @@ h1{
     background-size: cover;
     padding: 350px;
 }
+/* the nav bar */
+h2{
+    font-family: 'Fredoka', sans-serif;
+    color: rgb(241, 72, 10);
+    font-size: 50px;
+}
+span{
+    color: rgb(187, 157, 146);
+}
+
+ul li{
+    display: inline;
+    float: left;
+}
+li a{
+    display: block;
+  color: wheat;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover{
+    color:rgb(180, 58, 14);
+    text-decoration: none;
+}
+.nav{
+    border: 3px 3px transparent;
+    box-shadow: 5px 5px 10px lightsalmon;
+    position: relative;
+}
+nav ul{
+    list-style-type: none;
+  overflow: hidden;
+}
+/* about slice of heaven */
+#about{
+    text-align: right;
+}
+p{
+    color:brown;
+}
+
+#img1{
+    margin-right: 3%; 
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: 20px;
+    transition-duration: 0.2s;
+}
+
+#img1:hover{
+    box-shadow: 0 0 4px 3px;
+    transition: 0.5s;
+}
+
+#img1 img{
+    border-radius: 10px;
+}
+
+#img1 img:hover{
+    transform: scale(1.2);
+    transition-delay: 0.1s;
+   
+}
+.row{
+    padding: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.row div{
+    width: 450px;
+}
+
+#about-us{
+    padding: 2%;
+}
