@@ -11,7 +11,7 @@ $(document).ready(function(){
     // $("button.proceed").click(function(){
     //   $("button.proceed").hide();
     //   $("#information").hide();
-    //   $("div.choise").slideDown(1000);
+    //   $("div.choice").slideDown(1000);
     // });
     $("button.proceed").click(function(event){
      let pizzaname = $(".name option:selected").val();
