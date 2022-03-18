@@ -1,0 +1,14 @@
+/* the landing page */
+h1{
+    font-family: 'Fredoka' , sans-serif;
+    font-size: 60px;
+    text-align: left;
+    color: chocolate;
+    text-shadow: 3px 3px 5px black;
+}
+.home{
+    background-image: url("https://bit.ly/2tgdS1x");
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 350px;
+}
