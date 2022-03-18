@@ -7,7 +7,7 @@ h1{
     text-shadow: 3px 3px 5px black;
 }
 .home{
-    background-image: url("https://bit.ly/2tgdS1x");
+    background-image: url('/images/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 350px;
@@ -185,7 +185,7 @@ p{
 }
 .order{
     background-attachment: fixed;
-    background-image: url("../images/screen-1.jpg");
+    background-image: url("/images/orderbackgound.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
