@@ -139,4 +139,56 @@ $(document).ready(function(){
   
         $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
         console.log(newOrder);
+    });
+    // Checkout button
+    $("button#checkout").click(function(){ 
+      $("button#checkout").hide();
+      $("button.addPizza").hide();
+      $("button.deliver").slideDown(1000);
+      $("#addedprice").slideDown(1000);
+      console.log("Your total bills is Ksh. "+checkoutTotal);
+      $("#pizzatotal").append("Your bill is Ksh. "+checkoutTotal);
+    });
+
+    // home delivery button
+    $("button.deliver").click(function(){
+      $(".pizzatable").hide();
+      $(".choise h2").hide();
+      $(".delivery").slideDown(1000);
+      $("#addedprice").hide();
+      $("button.deliver").hide();
+      $("#pizzatotal").hide();
+      let deliceryamount= checkoutTotal+150;
+      console.log("You will pay Ksh. "+deliceryamount+" on delivery");
+      $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
+    });
+
+    // when one clicks place order button
+    $("button#final-order").click(function(event){
+      event.preventDefault();
+
+      $("#pizzatotal").hide();
+      $(".delivery").hide();
+      $("button#final-order").hide();
+      let deliceryamount= checkoutTotal+150;
+      console.log("Final Bill is: "+deliceryamount);
+      let person = $("input#name").val();
+      let phone = $("input#phone").val();
+      let location = $("input#location").val();
+
+      if ($("input#name").val() && $("input#phone").val() && $("input#location").val()!=""){
+  
+        $("#finallmessage").append(person+", We have recieved your order and it will be delivered to you at "+location+ ". Prepare sh. "+deliceryamount);
+        $("#totalbill").hide();
+        $("#finallmessage").slideDown(1200);
+      }
+      else {
+        alert("Please fill in the details for delivery!");
+        $(".delivery").show();
+        $("button#final-order").show();
+      }
+    });
+   event.preventDefault();
+  });
+});
      
