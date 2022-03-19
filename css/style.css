@@ -1,19 +1,21 @@
 /* the landing page */
-h1{
-    font-family: 'Fredoka' , sans-serif;
-    font-size: 60px;
-    text-align: left;
-    color: chocolate;
-    text-shadow: 3px 3px 5px black;
-}
 .home{
     background-image: url('/images/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 350px;
 }
+h1
+{
+  font-family: 'Fredoka' , sans-serif;
+  font-size: 60px;
+  text-align: left;
+  color: chocolate;
+  text-shadow: 3px 3px 5px black;
+}
 /* the nav bar */
-h2{
+h2
+{
     font-family: 'Fredoka', sans-serif;
     color: rgb(241, 72, 10);
     font-size: 50px;
@@ -185,7 +187,7 @@ p{
 }
 .order{
     background-attachment: fixed;
-    background-image: url("/images/orderbackgound.jpg");
+    background-image: url("../images/orderbackgound.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
