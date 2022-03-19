@@ -1,24 +1,27 @@
 /* the landing page */
 .home{
-    background-image: url('/images/background.jpeg');
+    background-image: url('../images/background.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     padding: 350px;
 }
 h1
 {
-  font-family: 'Fredoka' , sans-serif;
-  font-size: 60px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 200px;
+  font-style: oblique;
+  font-stretch: expanded;
   text-align: left;
-  color: chocolate;
+  color: rgb(65, 31, 7);
   text-shadow: 3px 3px 5px black;
 }
 /* the nav bar */
 h2
 {
     font-family: 'Fredoka', sans-serif;
+    font-style: italic;
     color: rgb(241, 72, 10);
-    font-size: 50px;
+    font-size: 60px;
 }
 span{
     color: rgb(187, 157, 146);
@@ -53,7 +56,7 @@ nav ul{
     text-align: right;
 }
 p{
-    color:brown;
+    color:rgb(146, 23, 23);
 }
 
 #img1{
