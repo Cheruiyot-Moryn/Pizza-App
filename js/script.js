@@ -7,6 +7,8 @@ function Getpizza( name,size,crust,topping, total ){
   this.topping = topping;
   this.total = total;
 }
+
+
 $(document).ready(function(){
     // $("button.proceed").click(function(){
     //   $("button.proceed").hide();
@@ -22,6 +24,7 @@ $(document).ready(function(){
          pizzatopping.push($(this).val());
      });
      console.log(pizzatopping.join(", "));
+
      switch(pizzasize){
         case "0":
           price =0;
@@ -140,6 +143,8 @@ $(document).ready(function(){
         $("#ordersmade").append('<tr><td id="pizzaname">'+newOrder.name +'</td><td id="pizzasize">' + newOrder.size + '</td><td id="pizzacrust">'+newOrder.crust + '</td><td id="pizzatopping">'+newOrder.topping+'</td><td id="totals">'+newOrder.total+'</td></tr>');
         console.log(newOrder);
     });
+
+
     // Checkout button
     $("button#checkout").click(function(){ 
       $("button#checkout").hide();
@@ -170,8 +175,8 @@ $(document).ready(function(){
       $("#pizzatotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount= checkoutTotal+200;
-      console.log("Final Bill is: "+deliceryamount);
+      let deliveryamount= checkoutTotal+200;
+      console.log("Final Bill is: "+deliveryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
       let location = $("input#location").val();
