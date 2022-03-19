@@ -1,9 +1,9 @@
 /* the landing page */
 .home{
-    background-image: url('../images/background.jpeg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding: 350px;
+  background-image: url('../images/background.jpeg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 350px;
 }
 h1
 {
@@ -15,6 +15,7 @@ h1
   color: rgb(65, 31, 7);
   text-shadow: 3px 3px 5px black;
 }
+
 /* the nav bar */
 h2
 {
@@ -227,7 +228,7 @@ p{
     text-align: left;
   }
   #your-orders{
-    color: white;
+    color: rgb(10, 0, 0);
     font-size: 30px;
   }
   #contact h2{
