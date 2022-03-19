@@ -63,13 +63,13 @@ $(document).ready(function(){
       console.log("nothing selected");
       $("button.proceed").show();
       $("#information").show();
-      $("div.choise").hide();
+      $("div.choice").hide();
       alert("Please select pizza size and crust"); 
     }
     else{
       $("button.proceed").hide();
       $("#information").hide();
-      $("div.choise").slideDown(1000);
+      $("div.choice").slideDown(1000);
     }
 
     total = price + crust_price + topping_value;
@@ -158,9 +158,9 @@ $(document).ready(function(){
       $("#addedprice").hide();
       $("button.deliver").hide();
       $("#pizzatotal").hide();
-      let deliceryamount= checkoutTotal+150;
-      console.log("You will pay Ksh. "+deliceryamount+" on delivery");
-      $("#totalbill").append("Your bill plus delivery fee is: "+deliceryamount);
+      let deliceryamount= checkoutTotal+200;
+      console.log("You will pay Ksh. "+deliveryamount+" on delivery");
+      $("#totalbill").append("Your bill plus delivery fee is: "+deliveryamount);
     });
 
     // when one clicks place order button
@@ -170,7 +170,7 @@ $(document).ready(function(){
       $("#pizzatotal").hide();
       $(".delivery").hide();
       $("button#final-order").hide();
-      let deliceryamount= checkoutTotal+150;
+      let deliceryamount= checkoutTotal+200;
       console.log("Final Bill is: "+deliceryamount);
       let person = $("input#name").val();
       let phone = $("input#phone").val();
