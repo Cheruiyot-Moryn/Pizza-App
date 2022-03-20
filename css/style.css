@@ -210,6 +210,10 @@ p{
     padding-left: 2%;
     padding-right: 2%;
   }
+  .buttons, .checkout-info{
+    display: none;
+    color: orangered;
+  }
   .deliver{
     display: none;
   }
