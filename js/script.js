@@ -60,6 +60,7 @@ $(document).ready(function () {
       console.log("nothing selected");
       $("button.proceed").show();
       $("#information").show();
+
       $("#delivery-info").hide();
       $("div.choice").hide();
       alert("Please select pizza size and crust");
@@ -133,8 +134,10 @@ $(document).ready(function () {
       $("button.deliver").hide();
       $("#pizzatotal").hide();
 
+
       console.log("You will pay Ksh. " + totalBill + " on delivery");
       $("#total-bill").append("Your bill plus delivery fee is: " + totalBill);
+
     });
 
     // when one clicks place order button
