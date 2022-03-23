@@ -213,7 +213,7 @@ p{
   }
   .buttons, .checkout-info{
     display: none;
-    color: orangered;
+    color: greenyellow;
   }
   .deliver{
     display: none;
