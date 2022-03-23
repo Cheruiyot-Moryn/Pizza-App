@@ -110,6 +110,8 @@ $(document).ready(function () {
       );
       console.log(newOrder);
     });
+
+
     // Checkout button
     $("button#checkout").click(function () {
       $("#delivery").hide();
